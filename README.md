@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ## axado-net
 Cadastro e avalição de transportadoras utilizando as tecnologias .NET (MVC).
 
@@ -14,3 +15,7 @@ Na pasta axado está o código da aplicação que irá consumir a API, foi utilizado:
 4. Depois de executado, acesse o menu LOGIN com os dados passados por e-mail
 5. Haverá uma lista de transportadoras cadastradas, onde o usuário poderá efetuar um CRUD básico.
 6. O usuário poderá avaliar a tranportadora apenas uma única vez.
+=======
+# axado-net
+ApicaÃ§Ã£o "Axado" desenvolvida em .NET
+>>>>>>> 9dcae76d6edc8e8fde0fb4f4fcbb8a12b07aaece
