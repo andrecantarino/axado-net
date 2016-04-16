@@ -1,0 +1,135 @@
+﻿@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta charset="ISO-8859-1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>@ViewBag.Title | Node.JS - MongoBD - Python - Django</title>
+    <!-- Bootstrap -->
+    <link href="~/Content/styles/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!--plugins-->
+    <link href="~/Content/styles/css/animate.css" rel="stylesheet">
+    <link href="~/Content/styles/css/flexslider.css" rel="stylesheet">
+    <link href="~/Content/styles/css/owl.carousel.css" rel="stylesheet">
+    <link href="~/Content/styles/css/owl.theme.css" rel="stylesheet">
+    <link href="~/Content/styles/font-awesome/css/font-awesome.css" rel="stylesheet">
+    <link href="~/Content/styles/themify-icons/themify-icons.css" rel="stylesheet">
+    <link href="~/Content/styles/css/jasny-bootstrap.min.css" rel="stylesheet">
+    <!--Revolution slider css-->
+    <link href="~/Content/styles/rs-plugin/css/settings.css" rel="stylesheet" type="text/css" media="screen">
+    <link href="~/Content/styles/css/rev-style.css" rel="stylesheet" type="text/css" media="screen">
+    <!--cube css-->
+    <link href="~/Content/styles/cubeportfolio/css/cubeportfolio.min.css" rel="stylesheet" type="text/css">
+    <!--custom css (comile from one-page.scss)-->
+    <link href="~/Content/styles/css/one-page.css" rel="stylesheet">
+    <link href="~/Content/styles/css/custom.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!-- jQuery-->
+    <script src="~/Content/js/jquery.min.js"></script>
+    <script src="~/Content/js/jquery-migrate.min.js"></script>
+    <script src="~/Content/styles/bootstrap/js/bootstrap.min.js"></script>
+    <script src="~/Content/js/jquery.easing.1.3.min.js" type="text/javascript"></script>
+    <script src="~/Content/js/wow.min.js" type="text/javascript"></script>
+    <script src="~/Content/js/jquery.sticky.js" type="text/javascript"></script>
+    <script src="~/Content/js/waypoints.min.js" type="text/javascript"></script>
+    <script src="~/Content/js/jquery.counterup.min.js" type="text/javascript"></script>
+    <script src="~/Content/js/modernizr.custom.97074.js" type="text/javascript"></script>
+    <script src="~/Content/js/parallax.min.js" type="text/javascript"></script>
+    <script src="~/Content/js/jquery.flexslider-min.js" type="text/javascript"></script>
+    <script src="~/Content/js/owl.carousel.min.js" type="text/javascript"></script>
+    @*<script src="~/Content/js/tweetie.min.js" type="text/javascript"></script>*@
+    <!--cube portfolio plugin-->
+    <script src="~/Content/styles/cubeportfolio/js/jquery.cubeportfolio.min.js" type="text/javascript"></script>
+    <script src="~/Content/js/cube-portfolio.js" type="text/javascript"></script>
+    <!--cantact form script-->
+    <script src="~/Content/js/jqBootstrapValidation.js" type="text/javascript"></script>
+    <script type="text/javascript" src="~/Content/js/jasny-bootstrap.min.js"></script>
+    <script type="text/javascript" src="~/Content/js/pace.min.js"></script>
+    <!--revolution slider plugins-->
+    <script src="~/Content/styles/rs-plugin/js/jquery.themepunch.tools.min.js" type="text/javascript"></script>
+    <script src="~/Content/styles/rs-plugin/js/jquery.themepunch.revolution.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="~/Content/js/revolution-custom.js"></script>
+    <script type="text/javascript" src="~/Content/js/jquery.cookie.js"></script>
+    <script src="~/Content/js/one-page.js" type="text/javascript"></script>
+    <script type="text/javascript" src="~/Content/js/jquery.md5.js"></script>
+    <script type="text/javascript" src="~/Content/js/jquery.mask.min.js"></script>
+    <script type="text/javascript" src="~/Content/js/one-page.js"></script>
+    <script type="text/javascript" src="~/Scripts/axado.js"></script>
+</head>
+<body data-spy="scroll">
+    <!--Main nav begin-->
+    <nav class="navbar navbar-default navbar-static-top sticky">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <div class="col col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                    <ul class="nav navbar-nav navbar-left scroll-to">
+                        <li class="usuario-logado"></li>
+                    </ul>
+                </div>
+                <div class="col col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                    <ul class="nav navbar-nav navbar-right scroll-to">
+                        <li class="active"><a href="/">Home</a></li>
+                        <li><a href="/#about">Sobre</a></li>
+                        <li><a href="/admin/transportadora/">Transportadora</a></li>
+                        <li class="li-logout hide"><span class="logout">Sair</span></li>                        
+                    </ul>
+                </div>
+            </div><!--/.nav-collapse -->
+        </div><!--/.container -->
+    </nav>
+    <!--Main nav end-->
+    <!-- body -->
+    @RenderBody()
+    <!--footer-->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-sm-offset-3 text-center margin20">
+                    <div class="footer-col">
+                        <p class="margin-b-20">
+                            Desenvolvido por André Cantarino
+                        </p>
+                        <div class="social">
+                            <a href="mailto:cantarino.andre@gmail.com" class="social-icon si-dark si-gray-round si-colored-google-plus">
+                                <i class="fa fa-envelope"></i>
+                                <i class="fa fa-envelope"></i>
+                            </a>
+                            <a href="https://github.com/andrecantarino" target="_blank" class="social-icon si-dark si-gray-round si-colored-github">
+                                <i class="fa fa-github"></i>
+                                <i class="fa fa-github"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/andrecantarino" target="_blank" class="social-icon si-dark si-gray-round si-colored-linkedin">
+                                <i class="fa fa-linkedin"></i>
+                                <i class="fa fa-linkedin"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div><!--footer col-->
+            </div>
+        </div>
+    </footer><!--footer 2 end-->
+    <!--footer end-->
+
+    <div id="back-to-top">
+        <a href="#top"><i class="fa fa-angle-up"></i></a>
+    </div>
+</body>
+</html>

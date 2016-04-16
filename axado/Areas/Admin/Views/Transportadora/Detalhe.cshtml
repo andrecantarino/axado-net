@@ -1,0 +1,45 @@
+﻿@model axado.Models.Transportadora
+@{
+    ViewBag.Title = "Detalhe da transportadora";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+<section id="contact" class="detalhe">
+    <div class="container">
+        <div class="left-title">
+            <span class="left-line"></span>
+            <h3 class="title">DETALHE DA TRANSPORTADORA</h3>
+        </div>
+        <div class="well">
+            <div class="row form-contact">
+                <div class="col col-xs-12 col-sm-12 col-md-6 col-lg-6 text-left">
+                    <a href="/admin/transportadora/" class="btn btn-primary btn-lg">LISTA DE TRANSPORTADORA</a>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <p>
+                    <span class="dados">Nome da transportadora:</span>
+                    <span class="info info-nome">@Html.DisplayFor(model => model.name)</span>
+                </p>
+                <p>
+                    <span class="dados">Razão social:</span>
+                    <span class="info info-razaosocial">@Html.DisplayFor(model => model.company_name)</span>
+                </p>
+                <p>
+                    <span class="dados">CNPJ:</span>
+                    <span class="info info-cnpj">@Html.DisplayFor(model => model.cnpj)</span>
+                </p>
+                <p>
+                    <span class="dados">Telefone:</span>
+                    <span class="info info-telefone">@Html.DisplayFor(model => model.phone)</span>
+                </p>
+                <p>
+                    <span class="dados">E-mail:</span>
+                    <span class="info info-email">@Html.DisplayFor(model => model.email)</span>
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+<script src="~/scripts/admin/transportadora/detalhe.js" type="text/javascript"></script>

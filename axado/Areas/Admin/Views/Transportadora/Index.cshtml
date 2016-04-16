@@ -1,0 +1,81 @@
+﻿@model IEnumerable<axado.Models.Transportadora>
+@{
+    ViewBag.Title = "Transportadora";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+<section id="contact" class="lista-transportadora">
+    <div class="container index-cliente">
+        <div class="left-title">
+            <span class="left-line"></span>
+            <h3 class="title">LISTAGEM DE TRANSPORTADORAS</h3>
+        </div>
+        <div id="message">
+            @*<div class="alert alert-warning alert-dismissible" role="alert">
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    Transportadora salva com sucesso!
+                </div>*@
+        </div>
+        <div class="well">
+            <div class="row form-contact">
+                <div class="col col-xs-12 col-sm-12 col-md-6 col-lg-6 text-left">
+                    <a href="/admin/transportadora/novo/" class="btn btn-primary btn-lg">CADASTRAR</a>
+                </div>
+                <div class="col col-xs-12 col-sm-12 col-md-6 col-lg-6 text-right col-buscar">
+                    <div name="buscarCliente" id="buscarCliente" class="contact-form form-buscar">
+                        <div class="row control-group">
+                            <div class="form-group controls">
+                                <input type="text" class="form-control" placeholder="Digite o nome da transportadora que deseja encontrar" id="q" name="q" value="">
+                                <span type="submit" class="btn btn-primary btn-lg btn-buscar">
+                                    <i class="fa fa-search"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="divide30"></div>
+        <div class="row row-cliente">
+            <div class="col col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th width="46%">Nome transportadora</th>
+                            <th width="12%">CNPJ</th>
+                            <th width="12%">&nbsp;</th>
+                            <th width="25%">&nbsp;</th>
+                        </tr>
+                    </thead>
+                    <tbody class="tbody-transportadora">
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <td>@Html.DisplayFor(modelItem => item.name)</td>
+                                <td class="td-cnpj">@Html.DisplayFor(modelItem => item.cnpj)</td>
+                                <td>
+                                    <select id="tr-@Html.DisplayFor(modelItem => item.cnpj)" class="rating" data-cnpj="@Html.DisplayFor(modelItem => item.cnpj)">
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <a href="/admin/transportadora/detalhe/@Html.DisplayFor(modelItem => item.cnpj)" class="btn btn-primary btn-sm">Detalhes</a>
+                                    <a href="/admin/transportadora/editar/@Html.DisplayFor(modelItem => item.cnpj)" class="btn btn-primary btn-sm">Editar</a>
+                                    <span data-cnpj="@Html.DisplayFor(modelItem => item.cnpj)" class="btn btn-primary btn-sm btn-delete">Deletar</span>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <input type="hidden" id="hd-lista" name="hd-lista" value="" />
+    </div>
+</section>
+<script src="~/Content/js/jquery.barrating.js" type="text/javascript"></script>
+<script src="~/scripts/admin/transportadora/lista.js" type="text/javascript"></script>

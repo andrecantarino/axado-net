@@ -1,0 +1,5 @@
+C:\Projetos\axado\axado\rotas\bin\Debug\rotas.dll
+C:\Projetos\axado\axado\rotas\bin\Debug\rotas.pdb
+C:\Projetos\axado\axado\rotas\obj\Debug\rotas.dll
+C:\Projetos\axado\axado\rotas\obj\Debug\rotas.pdb
+C:\Projetos\axado\axado\rotas\obj\Debug\rotas.csprojResolveAssemblyReference.cache
